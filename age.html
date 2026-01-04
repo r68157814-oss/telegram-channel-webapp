@@ -1,0 +1,13 @@
+<h2>⚠️ 18+ Age Verification</h2>
+<p>You must be 18 years or older.</p>
+<button onclick="confirmAge()">I am 18+</button>
+
+<script>
+function confirmAge(){
+  localStorage.setItem("age_ok","yes");
+  location.href="index.html";
+}
+if(localStorage.getItem("age_ok")==="yes"){
+  location.href="index.html";
+}
+</script>
