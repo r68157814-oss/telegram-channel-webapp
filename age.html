@@ -11,3 +11,18 @@ if(localStorage.getItem("age_ok")==="yes"){
   location.href="index.html";
 }
 </script>
+
+<div id="cookie">
+This site uses cookies.
+<button onclick="accept()">Accept</button>
+</div>
+
+<script>
+function accept(){
+ localStorage.setItem("cookie","ok");
+ document.getElementById("cookie").style.display="none";
+}
+if(localStorage.getItem("cookie")){
+ document.getElementById("cookie").style.display="none";
+}
+</script>
